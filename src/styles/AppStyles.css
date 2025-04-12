@@ -1,0 +1,164 @@
+/* styles/ListForm.css */
+
+/* Shared Reset */
+body, input, button, select {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* NavBar Styles */
+.navbar {
+  background-color: #1aa33c;
+  padding: 1rem;
+  color: white;
+}
+
+
+ 
+
+.navbar-links {
+  list-style: none;
+  display: flex;
+  gap: 1rem;
+}
+
+.navbar-links li a {
+  color: rgb(101, 12, 244);
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.navbar-links li a:hover {
+  text-decoration: underline;
+}
+
+/* ListForm Styles */
+.list-form {
+  padding: 2rem;
+  max-width: 500px;
+  margin: auto;
+}
+
+.list-form h3 {
+  margin-bottom: 1rem;
+  color: #333;
+}
+
+.list-form form {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+
+.list-form input[type="text"] {
+  padding: 0.5rem;
+  font-size: 1rem;
+}
+
+.list-form button {
+  padding: 0.5rem;
+  background-color: #28a745;
+  color: white;
+  border: none;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.list-form button:hover {
+  background-color: #218838;
+}
+
+/* ListPage Styles */
+.list-page {
+  padding: 2rem;
+  max-width: 600px;
+  margin: auto;
+}
+
+.add-item-form {
+  display: flex;
+  gap: 0.5rem;
+  margin-bottom: 1rem;
+}
+
+.add-item-form input, .add-item-form select {
+  padding: 0.5rem;
+  font-size: 1rem;
+}
+
+.add-item-form button {
+  background-color: #17a2b8;
+  color: rgb(18, 239, 73);
+  border: none;
+  padding: 0.5rem 1rem;
+  cursor: pointer;
+}
+
+.add-item-form button:hover {
+  background-color: #138496;
+}
+
+.toggle-completed {
+  margin-bottom: 1rem;
+  font-size: 0.9rem;
+}
+
+.task-list {
+  list-style: none;
+  padding: 0;
+}
+
+.task-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #f8f9fa;
+  border: 1px solid #dee2e6;
+  padding: 0.75rem;
+  margin-bottom: 0.5rem;
+  border-radius: 4px;
+}
+
+.task-item.completed {
+  text-decoration: line-through;
+  color: gray;
+}
+
+.task-item button {
+  margin-left: 0.5rem;
+  background-color: transparent;
+  border: none;
+  color: #dc3545;
+  cursor: pointer;
+}
+
+.task-item button:hover {
+  color: #bd2130;
+}
+
+.delete-list-btn {
+  margin-top: 1rem;
+  background-color: #dc3545;
+  color: rgb(6, 241, 123);
+  border: none;
+  padding: 0.5rem 1rem;
+  cursor: pointer;
+  border-radius: 4px;
+}
+
+.delete-list-btn:hover {
+  background-color: #c82333;
+}
+.footer {
+  background-color: #1883ed;
+  color: #b70808;
+  text-align: center;
+  padding: 15px 0;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  border-top: 1px solid #141313;
+  font-size: 14px;
+}
